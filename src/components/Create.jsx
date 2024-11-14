@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
 const Create = ({
   getTitle,
   getContent,
@@ -27,9 +30,12 @@ const Create = ({
         <br />
         <br />
         <button onClick={savePost} className="btn btn-primary me-4 ">
-          Create Post
+          + Create Post
         </button>
-        <button className="btn btn-danger">Cancel</button>
+        <button className="btn btn-danger">
+          <i className="fa-solid fa-ban me-2"></i>
+          Cancel
+        </button>
       </form>
     </>
   );

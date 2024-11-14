@@ -28,9 +28,13 @@ const Edit = ({
         <br />
         <br />
         <button onClick={updatePost} className="btn me-4 btn-primary">
+          <i className="fa-solid fa-pen me-2"></i>
           Update Post
         </button>
-        <button onClick={cancelEdit} className="btn me-2 btn-danger">Cancel Edit</button>
+        <button onClick={cancelEdit} className="btn me-2 btn-danger">
+          <i className="fa-solid fa-ban me-2"></i>
+          Cancel Edit
+        </button>
       </form>
     </>
   );
